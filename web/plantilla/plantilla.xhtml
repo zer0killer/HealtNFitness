@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Salud 'n' Fitness</title>
+
+    </h:head>
+
+    <h:body>
+        <!-- ******************************************* E N C A B E Z A D O ******************************************************-->
+        <div id="top">
+            <div align="right" >
+                <nav>
+                    <ul>
+                        <li><h:graphicImage library="img" name="carro.png" height="20px" width="20px"/>
+                        </li>
+                        <li><label>0.0</label></li>
+                    </ul>
+                </nav>
+            </div>
+            <a href="/producto/faces/productos.xhtml" title="productos">
+                <f:facet name="header">logo</f:facet>
+                <h:graphicImage library="img" name="logo.jpg" height="55px" width="260px"/>
+                <f:facet name="pie">picture</f:facet>
+            </a>
+            <div align="right">
+                <nav>
+                    <ul id="mainMenu">
+                        <li><a href="/producto/faces/productos.xhtml" title="Home">
+                                <h:graphicImage library="img" name="home.png"
+                                                alt ="home" height="20px" width="20px" /></a></li>
+                        <li><a href="producto.xhtml" title="producto">Productos</a></li>
+                        <li><a href="liga acerca de..." title="acercade">Acerca de S and F</a></li>
+                        <li><a href="/plantilla1/faces/contacto.xhtml">Contacto</a></li></ul>
+                </nav>
+            </div>
+
+        </div>
+
+
+
+        <div id="content" class="center_content">
+            <!--<ui:insert name="content">Content 1</ui:insert>-->
+            <div align="center">
+                <!--<a href="" id="link"><img src="" id="imagen"></a>-->
+
+
+                
+
+
+
+                <!-- <a href="" id="link" target="_blank"><img src="" id="imagen" height="619px" width="1076px" style="border-radius: 40px"/></a>-->
+            </div>
+            
+
+                                
+
+
+                                
+                            
+
+
+                           
+
+                    <div id="content3">  
+                            <ui:insert name="content3">
+
+                            </ui:insert>
+                    </div>
+            
+            
+                    <div id="proteinas">  
+                            <ui:insert name="proteinas">
+
+                            </ui:insert>
+                    </div>
+            
+            <!-- panelgrid y panel group-->
+        </div>
+
+
+
+
+
+
+
+        <div id="content2" class="center_content2">
+            <!--<ui:insert name="content">Content 2</ui:insert>-->
+            <div align="center">
+
+
+                <h2>NUESTRAS MARCAS</h2> -->
+                <div align="center">
+                    <img src="resources/img/estrella.png" height="70px" width="70px"/>
+                    <h4>NUESTRAS MARCAS, SOLO LAS MEJORES...</h4>
+                </div>
+                <div align="center">
+                    <img src="img/opn.png" height="110px" width="150px"/>
+                    <img src="resources/img/gat.png" height="110px" width="150px"/>
+                    <img src="resources/img/musc.png" height="110px" width="150px"/>
+                    <img src="resources/img/spar.png" height="110px" width="150px"/>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+        <!-- ******************************************* P I E   D E   P A G I N A ************************************************-->
+        <div id="bottom"  align="justify" class="abajo">
+            <div align="left" class="columna">
+                <ul>
+                    <li><a href="Aqui va liga a fb" title="FB">
+                            <h:graphicImage library="img" name="fb.png" height="40px" width="40px" >
+                            </h:graphicImage> 
+                            <label>Facebook</label>
+                        </a></li>
+                    <p/>
+                    <li>
+                        <a href="Aqui va liga a tw" title="TW">
+                            <h:graphicImage library="img" name="tw.png" height="40px" width="40px" >
+                            </h:graphicImage> 
+                            <label>Twitter</label>
+                        </a></li>
+                </ul>
+            </div>
+
+            <div align="center" class="columna">
+                <a href="Aqui va liga a home" title="Home">
+                    <f:facet name="header">logo</f:facet>
+                    <h:graphicImage style="padding-top: 25px" library="img" name="logo.jpg" height="55px" width="260px" >
+                    </h:graphicImage>
+                    <f:facet name="pie">picture</f:facet>
+                </a>
+            </div>
+
+            <div align="right" class="columna">
+                <ul>
+                    <li>Contacto:</li><p/>
+                    <li>Telefono:(722)123-45-67</li><p/>
+                    <li>Telefono:(722)987-65-</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- **********************************************************************************************************************-->
+        <h:outputStylesheet name="css/default.css"/>
+        <h:outputStylesheet name="css/cssLayout.css"/>
+        <h:outputStylesheet name="css/myStyle.css"/>
+    </h:body>
+</html>
