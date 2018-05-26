@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+        <title>Carrito</title>
+        
+    </h:head>
+
+    <h:body>
+
+        <div id="top">
+            <div align="right" >
+                <nav>
+                    <ul>
+                        <li><a href="PageCarr.xhtml">
+                            <h:graphicImage library="img" name="carro.png" height="20px" width="20px"/>
+                            </a>
+                        </li>
+                        <li><label>0.0</label></li>
+                    </ul>
+                </nav>
+            </div>
+            <a href="home.xhtml" title="Home">
+                <f:facet name="header">logo</f:facet>
+                <h:graphicImage library="img" name="logo.jpg" height="55px" width="260px"/>
+                <f:facet name="pie">picture</f:facet>
+            </a>
+            <div align="right">
+                <nav>
+                    <ul id="mainMenu">
+                        <li><a href="" title="Home">
+                                <h:graphicImage library="img" name="home.png"
+                                                alt ="home" height="20px" width="20px" /></a></li>
+                        <li><a href="Aqui va liga a productos" title="Productos">Productos</a></li>
+                        <li><a href="liga acerca de..." title="acercade">Acerca de S and F</a></li>
+                        <li><a href="contacto.xhtml">Contacto</a></li></ul>
+                </nav>
+            </div>
+
+        </div>
+
+        <div id="content" class="center_content">
+            <ui:insert name="content">
+                <h:form>
+                <h:dataTable value="#{carritoData.carrito}" var="carr"   styleClass="tabla"  
+                             headerClass="encabezado" rowClasses="fila" columnClasses="colum1,colum2,colum3,colum4,colum5" >
+                    <h:column>
+                        <f:facet name="header">Seleccionado</f:facet>
+                        <h:selectBooleanCheckbox>
+                            <f:selectItem></f:selectItem>
+                        </h:selectBooleanCheckbox>
+                    </h:column>
+                    <h:column >
+                        <f:facet  name="header">Nombre</f:facet>
+                        #{carr.nombre}
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">Precio</f:facet>
+                        #{carr.precio}
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">Cantidad</f:facet>
+                        <h:selectOneMenu styleClass="menuCombo">
+                            <f:selectItem itemLabel="1"/>
+                            <f:selectItem itemLabel="2"/>
+                            <f:selectItem itemLabel="3"/>
+                        </h:selectOneMenu>
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">Total</f:facet>
+                        #{carr.total}
+                    </h:column>	
+                </h:dataTable>
+                <br/>
+                <h:button value="Actualizar Carrito" styleClass="actCarr"></h:button>
+                <br/>
+                <br/>
+                <h:button value="Continuar Comprando" styleClass="ContCompr"/>
+                <div class="DetComp" align="center">
+                    <h3 align="left" >Total de la Compra</h3>
+                    <div class="Detalles">
+                        <p align="left" class="eti"><strong>Subtotal: </strong> <h:outputLabel value="$180"/></p> 
+                        <p align="left" class="eti"><strong>Envio: </strong> <h:outputLabel value="$200"/></p>
+                        <p align="left" class="eti"><strong>Total: </strong> <h:outputLabel value="$380"/></p>
+                    </div>
+                    
+                </div>
+                <br/>
+                <br/>
+                <div align="right" class="divpagar">
+                    <h:button value="Pagar" styleClass="pagar"></h:button>
+                </div>
+                </h:form>
+            </ui:insert>
+        </div>
+
+       <div id="bottom"   class="abajo">
+            <div align="left" class="columna">
+                <ul>
+                    <li><a href="" title="FB">
+                            <h:graphicImage library="img" name="fb.png" height="40px" width="40px" >
+                            </h:graphicImage> 
+                            <label>Facebook</label>
+                        </a></li>
+                    <p/>
+                    <li>
+                        <a href="" title="TW">
+                            <h:graphicImage library="img" name="tw.png" height="40px" width="40px" >
+                            </h:graphicImage> 
+                            <label>Twitter</label>
+                        </a></li>
+                </ul>
+            </div>
+
+            <div align="center" class="columna">
+                <a href="Aqui va liga a home" title="Home">
+                    <f:facet name="header">logo</f:facet>
+                    <h:graphicImage style="padding-top: 25px" library="img" name="logo.jpg" height="55px" width="260px" >
+                    </h:graphicImage>
+                    <f:facet name="pie">picture</f:facet>
+                </a>
+            </div>
+
+            <div align="right" class="columna">
+                <ul>
+                    <li>Contacto:</li><p/>
+                    <li>Telefono:(722)123-45-67</li><p/>
+                    <li>Telefono:(722)987-65-</li>
+                </ul>
+            </div>
+        </div>
+        
+        <h:outputStylesheet name="css/default.css"/>
+        <h:outputStylesheet name="css/cssLayout.css"/>
+
+    </h:body>
+
+</html>

@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Salud 'n' Fitness</title>
+    </h:head>
+
+    <h:body>
+        <!-- ******************************************* E N C A B E Z A D O ******************************************************-->
+        <div id="top">
+            <div align="right" >
+                <nav>
+                    <ul>
+                        <li><a href="PageCarr.xhtml">
+                            <h:graphicImage library="img" name="carro.png" height="20px" width="20px"/>
+                            </a>
+                        </li>
+                        <li><label>0.0</label></li>
+                    </ul>
+                </nav>
+            </div>
+            <a href="home.xhtml" title="Home">
+                <f:facet name="header">logo</f:facet>
+                <h:graphicImage library="img" name="logo.jpg" height="55px" width="260px"/>
+                <f:facet name="pie">picture</f:facet>
+            </a>
+            <div align="right">
+                <nav>
+                    <ul id="mainMenu">
+                        <li><a href="home.xhtml" title="Home">
+                                <h:graphicImage library="img" name="home.png"
+                                                alt ="home" height="20px" width="20px" /></a></li>
+                        <li><a href="Aqui va liga a productos" title="Productos">Productos</a></li>
+                        <li><a href="liga acerca de..." title="acercade">Acerca de S and F</a></li>
+                        <li><a href="contacto.xhtml">Contacto</a></li></ul>
+                </nav>
+            </div>
+        </div>
+        <!-- ******************************************* C O N T E N I D O ******************************************************-->
+        
+        <div id="content">
+            <ui:insert name="content">
+            </ui:insert>
+        </div>
+
+        <!-- ******************************************* P I E   D E   P A G I N A ************************************************-->
+        <div id="bottom"  align="justify" class="abajo">
+            <div align="left" class="columna">
+                <ul>
+                    <li><a href="Aqui va liga a fb" title="FB">
+                            <h:graphicImage library="img" name="fb.png" height="40px" width="40px" >
+                            </h:graphicImage> 
+                            <label>Facebook</label>
+                        </a></li>
+                    <p/>
+                    <li>
+                        <a href="Aqui va liga a tw" title="TW">
+                            <h:graphicImage library="img" name="tw.png" height="40px" width="40px" >
+                            </h:graphicImage> 
+                            <label>Twitter</label>
+                        </a></li>
+                </ul>
+            </div>
+
+            <div align="center" class="columna">
+                <a href="Aqui va liga a home" title="Home">
+                    <f:facet name="header">logo</f:facet>
+                    <h:graphicImage style="padding-top: 25px" library="img" name="logo.jpg" height="55px" width="260px" >
+                    </h:graphicImage>
+                    <f:facet name="pie">picture</f:facet>
+                </a>
+            </div>
+
+            <div align="right" class="columna">
+                <ul>
+                    <li>Contacto:</li><p/>
+                    <li>Telefono:(722)123-45-67</li><p/>
+                    <li>Telefono:(722)987-65-</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- **********************************************************************************************************************-->
+        <h:outputStylesheet name="css/defaultcont.css"/>
+        <h:outputStylesheet name="css/cssLayoutcont.css"/>
+    </h:body>
+
+</html>

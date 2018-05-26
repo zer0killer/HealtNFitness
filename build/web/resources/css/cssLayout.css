@@ -1,0 +1,166 @@
+
+
+#top {
+    position: relative;
+    background-color: greenyellow;
+    color: black;
+    padding: 5px;
+    margin: 0px 0px 10px 0px;
+}
+
+#bottom {
+    position: relative;
+    background-color: greenyellow;
+    padding: 5px;
+    margin: 10px 0px 0px 0px;
+}
+#celda{
+    border: 2px solid black;
+}
+
+#left {
+    float: left;
+    background-color: greenyellow;
+    padding: 5px;
+    width: 150px;
+}
+
+#right {
+    float: right;
+    background-color: greenyellow;
+    padding: 5px;
+    width: 150px;
+}
+
+.center_content {
+    position: relative;
+    background-color: greenyellow;
+    padding: 5px;
+    border-top: solid black 5px;
+    border-bottom: solid green 5px;
+    
+}
+.center_content2 {
+    position: relative;
+    background-color: greenyellow;
+    padding: 5px;
+    /*border-top: solid #000000 2px;*/
+}
+
+.left_content {
+    background-color: #dddddd;
+    padding: 5px;
+    margin-left: 170px;
+}
+
+.right_content {
+    background-color: #dddddd;
+    padding: 5px;
+    margin: 0px 170px 0px 170px;
+}
+
+#top a:link, #top a:visited {
+  color: black;
+  font-weight : bold;
+  text-decoration: none;
+}
+
+#top a:link:hover, #top a:visited:hover  {
+  color: black;
+  font-weight : bold;
+  text-decoration : underline;
+}
+.tabla{
+    margin-top: 50px;
+    padding: 5px;
+    background-color: white;
+    align-content: center;
+    margin-left: 60px;
+      
+}
+.fila{
+    text-align: center;
+    
+}
+
+.encabezado{
+    padding-bottom: 25px;
+    padding-top: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: appworkspace;
+}
+.colum1{
+    border: 2px solid black;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.colum2{
+    border: 2px solid black;
+   padding-bottom: 50px;
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.colum3{
+    border: 2px solid black;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.colum4{
+    border: 2px solid black;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.colum5{
+    border: 2px solid black;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.actCarr{
+    width: 1235px;
+    border-radius: 5px;
+    margin-left: 60px;
+}
+.menuCombo{
+ width: 65px;   
+}
+
+.ContCompr{
+    border-radius: 5px;
+    width: 150px;
+    margin-left: 60px;
+}
+.DetComp{
+    width: 450px;
+    height: 180px;
+    border: 3px solid black;
+    margin-left: 840px;
+    background-color: white;
+}
+.eti{
+  margin-left: 15px;
+   
+}
+
+.Detalles{
+    
+    border: 3px dotted black;
+    width: 400px;
+    height: 100px;
+}
+.pagar{
+    border-radius: 5px;
+    padding: 10px;
+}
+.divpagar{
+    margin-right: 20px;
+}

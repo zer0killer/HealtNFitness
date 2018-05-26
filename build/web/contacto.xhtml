@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+
+        <ui:composition template="Plantillas/plantilla_cont.xhtml">
+            <ui:define name="top">
+            </ui:define>
+            <!-- ******************************************* C O N T E N I D O ******************************************************-->
+            <ui:define name="content">
+
+                <div  >
+                    <!--<ui:insert name="content">Content 1</ui:insert>-->
+                    <div style="width:40%; background:#FFCC00; float:left;">
+                        <ul>
+                            <li style="padding-left:20px; font-family: sans-serif;font-size: xx-large">Pedidos</li>
+                            <ul style="padding-left: 50px;padding-top: 10px" >
+                                <li style="alignment-adjust: central">
+                                    <h:graphicImage style="padding-top: 15px; padding-right: 10px" library="img" name="cl.png" height="30px" width="30px" />
+                                    <li>Tienda fisica abierta de 9 a.m. - 19 p.m.</li>
+                                </li><p/>
+                                <li><h:graphicImage style="padding-top: 15px; padding-right: 10px" library="img" name="pho.png" height="30px" width="30px" >
+                                    </h:graphicImage>
+                                    <li >
+                                        Telefono:(722)123-45-67</li><p/>
+                                    <li style="padding-left:55px">
+                                        Telefono:(722)987-65-43</li>
+                                </li><p/>
+                                <li><h:graphicImage style="padding-top: 15px" library="img" name="at.png" height="30px" width="30px" >
+                                    </h:graphicImage>
+                                    <li style="padding-left: 10px">Correo: saludnfitness@gmail.com</li>
+                                </li><p/>
+                            </ul>
+                        </ul>
+                    </div>
+
+                    <div style="width:40%; background:#CCFF66; float:right;">
+                        <h:form>
+                            <ul>
+                                <li style="padding-left:20px ;font-family: sans-serif;font-size: xx-large">Comentarios</li>
+                                <ul style="padding-left: 50px;padding-top: 10px">
+                                    <li><label>Nombre: </label><p/> </li>
+                                    <li style="alignment-adjust: central">
+                                        <h:inputTextarea/> 
+                                    </li><p/>
+                                    <li><label>Correo: </label><p/></li>
+                                    <li style="alignment-adjust: central">
+                                        <h:inputTextarea/>
+                                    </li><p/>
+                                </ul>
+                                <li style="padding-left:50px"><label>Comentario:</label><p/></li>
+                                <li style="padding-left:50px">
+                                    <h:inputTextarea  style="
+                                                      top: 50%;
+                                                      left: 70%;
+                                                      padding: 50px 50px;"/>
+                                </li>
+                            </ul>
+                        </h:form>
+                    </div>
+
+                </div>
+
+
+                <div style="width:100%; padding:300px;" id="content2" class="center_content2">
+
+                    <div style="float: bottom">
+                        <div style="padding-top: 1% ;width:40%; background: #9BEF09; float:left;">
+                            <ul>
+                                <li style="padding-left:20px; font-family: sans-serif;font-size: xx-large">Productos</li>
+                                <ul style="padding-left: 50px;padding-top: 10px" >
+                                    <li style="alignment-adjust: central">
+                                        <h:graphicImage style="padding-top: 15px; padding-right: 10px" library="img" name="cl.png" height="30px" width="30px" />
+                                        <li>Descripción de productos y así.</li>
+                                    </li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </ui:define>
+
+        </ui:composition>
+        <!-- ******************************************* P I E   D E   P A G I N A ************************************************-->
+        <ui:composition template="plantilla/plantilla_cont.xhtml">
+            <ui:define name="bottom">
+                <ui:insert name="content"></ui:insert>
+            </ui:define>
+        </ui:composition>
+
+
+    </h:body>
+</html>
+

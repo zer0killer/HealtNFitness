@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <!--<h:outputStylesheet name="/css/default.css"/>
+        <h:outputStylesheet name="/css/cssLayout.css"/>-->
+        <title>Home</title>
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    </h:head>
+
+    <h:body>
+
+        <!-- ********************************************* E N C A B E Z A D O **************************************************-->
+
+        <div id="top">
+            <div align="right" >
+                <nav>
+                    <ul>
+                        <li><a href="PageCarr.xhtml">
+                            <h:graphicImage library="img" name="carro.png" height="20px" width="20px"/>
+                            </a>
+                        </li>
+                        <li><label>0.0</label></li>
+                    </ul>
+                </nav>
+            </div>
+            <div align="left" class="logazo">
+                <a href="Aqui va liga a home" title="Home">
+                    <f:facet name="header">logo</f:facet>
+                    <h:graphicImage library="img" name="logo.jpg" height="55px" width="260px" >
+                    </h:graphicImage>
+                    <f:facet name="pie">picture</f:facet>
+                </a>
+            </div>
+            <div align="right">
+                <nav>
+                    <ul id="mainMenu">
+                        <li><a href="home.xhtml" title="Home">
+                                <h:graphicImage library="img" name="home.png"
+                                                alt ="home" height="20px" width="20px" /></a></li>
+                        <li><a href="Aqui va liga a productos" title="Productos">PRODUCTOS</a></li>
+                        <li><a href="liga a hacerca de..." title="acercade">ACERCA DE</a></li>
+                        <li><a href="contacto.xhtml">CONTACTO</a></li></ul>
+                </nav>
+            </div>
+        </div>
+        <a href="../contacto.xhtml"></a>
+        <!-- *********************************************  C O N T E N I D O  **************************************************-->
+        <div id="content" class="center_content">
+            <div align="center">
+                <div id="contenedor-slider" class="contenedor-slider">
+                    <div id="slider" class="slider" align="center">
+                        <section class="slider__section"><img src="resources/img/1.jpg" class="slider__img"/></section>
+                        <section class="slider__section"><img src="resources/img/2.jpg" class="slider__img"/></section>
+                        <section class="slider__section"><img src="resources/img/3.jpg" class="slider__img"/></section>
+                        <section class="slider__section"><img src="resources/img/4.jpg" class="slider__img"/></section>
+                    </div>
+                    <div id="btn-prev" class="btn-prev">&#60;</div>
+                    <div id="btn-next" class="btn-next">&#62;</div>
+                </div>
+            </div>
+        </div>
+        
+                <div id="content2" class="center_content2">
+                    <div align="center">
+                        <div align="center">
+                            <img src="resources/img/estrella.png" height="70px" width="70px"/>
+                            <h4>NUESTRAS MARCAS, SOLO LAS MEJORES...</h4>
+                        </div>
+                        <div align="center">
+                            <img src="resources/img/opn.png" height="110px" width="150px"/>
+                            <img src="resources/img/gat.png" height="110px" width="150px"/>
+                            <img src="resources/img/musc.png" height="110px" width="150px"/>
+                            <img src="resources/img/spar.png" height="110px" width="150px"/>
+                        </div>
+                    </div>
+                </div>
+        
+
+
+        <!-- ********************************************* P I E  D E  P A G I N A **********************************************-->
+
+        <div id="bottom"  align="justify" class="abajo">
+            <div align="left" class="columna_redes">
+                <ul>
+                    <li><a href="https://www.facebook.com/suplementosgym.oficial/" title="FB" target="_blank">
+                            <h:graphicImage library="img" name="fb.png" height="40px" width="40px" >
+                            </h:graphicImage> 
+                            <label>Facebook</label>
+                        </a></li>
+                    <p/>
+                    <li>
+                        <a href="Aqui va liga a tw" title="TW">
+                            <h:graphicImage library="img" name="tw.png" height="40px" width="40px" >
+                            </h:graphicImage> 
+                            <label>Twitter</label>
+                        </a></li>
+                </ul>
+            </div>
+
+            <div align="center" class="columna">
+                <a href="Aqui va liga a home" title="Home">
+                    <f:facet name="header">logo</f:facet>
+                    <h:graphicImage style="padding-top: 30px" library="img" name="logo.jpg" height="55px" width="260px" >
+                    </h:graphicImage>
+                    <f:facet name="pie">picture</f:facet>
+                </a>
+            </div>
+
+            <div align="right" class="columna2">
+                <ul>
+                    <li><strong>CONTACTO:</strong></li><p/>
+                    <li>Telefono:(728) 288-4567</li><p/>
+                    <li>Celular:(722) 987-6500</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- *******************************************************************************************************************-->
+        <h:outputStylesheet name="css/defaultpagehome.css"/>
+        <h:outputStylesheet name="css/csspagehome.css"/>   
+        <h:outputStylesheet name="css/slider_pagehome.css"/>
+        <!--<h:outputScript name="http://code.jquery.com/jquery-1.11.3.min.js"/>-->
+        <h:outputScript name="scripts/slider_pagehome.js"/>
+
+    </h:body>
+</html>
