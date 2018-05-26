@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+    <body>
+
+        <ui:composition template="./plantilla/plantilla.xhtml">
+
+           <!-- <ui:define name="content3">
+                content3
+            </ui:define>
+            -->
+            <ui:define name="proteinas">
+                <h:form>
+                    <h:panelGrid>
+                        <h:panelGroup>
+                             <div align="center" class="active">   
+                                    <ol>
+                                        <li><a class="active" href="proteinas.xhtml">Proteinas</a></li>
+                                        <li><a class="active" href="#news">Aminos</a></li>
+                                        <li><a class="active" href="#contact">Post-Entrenamiento</a></li>
+                                        <li><a class="active" href="#about">Pre-Entrenamiento</a></li>
+                                        <li><a class="active" href="#about">Definición Muscular</a></li>
+                                        <li><a class="active" href="#about">Vitaminas y Varios</a></li>
+
+                                    </ol>
+                            </div>  
+                        </h:panelGroup>
+                    </h:panelGrid>
+                </h:form>  
+                
+                
+                <h:panelGrid>
+                    <h:panelGroup>
+                        <div  class="gallery">
+                                    <a target="_blank" href="resources/img/p2.jpg">
+                                        <img src="resources/img/p2.jpg" alt="Mountains" width="600" height="400"/>
+                                    </a>
+                                    <div class="desc">Syntha-6</div>
+                                    <div class="desc">$ 500</div>
+                                    
+                                    <div align="center" class="ec-stars-wrapper">
+                                        <a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+                                        <a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+                                        <a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+                                        <a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+                                        <a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+                                    </div>
+                                </div>
+                    </h:panelGroup>
+                </h:panelGrid>
+                
+                
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>
