@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <ui:composition template="Plantillas/plantilla_cont.xhtml">
+            <ui:define name="top">
+            </ui:define>
+            <!-- ******************************************* C O N T E N I D O ******************************************************-->
+            <ui:define name="content">
+                <div id="registro" >
+                    <form  autocomplete="on"> 
+                        <h1> Sign up </h1> 
+                        <p> 
+                            <label for="usuario" class="usuario" data-icon="u">Nombre de usuario</label>
+                            <input id="usuario" name="usuario" required="required" type="text" placeholder="mysuperusername690" />
+                        </p>
+                        <p> 
+                            <label for="correo" class="correo" data-icon="e" > Correo</label>
+                            <input id="correo" name="correoR" required="required" type="email" placeholder="mysupermail@mail.com"/> 
+                        </p>
+                        <p> 
+                            <label for="contraseña" class="contraseña" data-icon="p">Contraseña </label>
+                            <input id="contraseña" name="contraseña" required="required" type="password" placeholder="eg. X8df!90EO"/>
+                        </p>
+                        <p> 
+                            <label for="contraseña2" class="contraseña2" data-icon="p">Confirma tú contraseña </label>
+                            <input id="contraseña2" name="contraseña2" required="required" type="password" placeholder="eg. X8df!90EO"/>
+                        </p>
+                        <p class="registrar"> 
+                            <input type="submit" value="Registrar"/> 
+                        </p>
+                        <p class="change_link">  
+                            ¿Te encuentras registrado?
+                            <a href="login.xhtml" class="to_register"> Inicia sesión </a>
+                        </p>
+                    </form>
+                </div>
+            </ui:define>
+        </ui:composition>
+<!-- ******************************************* P I E   D E   P A G I N A ************************************************-->
+        <ui:composition template="plantilla/plantilla_cont.xhtml">
+            <ui:define name="bottom">
+                <ui:insert name="content"></ui:insert>
+            </ui:define>
+        </ui:composition>
+
+    </h:body>
+</html>
+
